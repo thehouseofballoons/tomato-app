@@ -69,3 +69,19 @@ git clone [https://github.com/thehouseofballoons/tomato-app.git](https://github.
 
 # Navigate to the project
 cd tomato-app
+
+### 3. Setup Environment Variables
+To keep your sensitive data secure, create a `.env` file in the **backend** folder and add your credentials:
+
+```env
+MONGODB_URI=your_mongodb_uri
+STRIPE_SECRET_KEY=your_stripe_secret_key
+JWT_SECRET=your_unique_secret_string
+
+cd backend
+npm install
+npm run dev
+
+cd frontend
+npm install
+npm run dev
